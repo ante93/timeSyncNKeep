@@ -2,10 +2,10 @@
 
 timeSyncNKeep:timeSyncNKeep(String server, float timeZone, int summerTime){ //creates timeSyncNKeep object
 	//Time zone in floating point; second parameter: 1 for European summer time; 2 for US daylight saving time
-	NTPtime NTPserver(server);
+	this.NTPtime NTPserver(server);
 	this.timeZone = timeZone;
 	this.summerTime = summerTime;
-	rtcObject.Begin();
+	this.rtcObject.Begin();
 }
 
 strDateTime timeSyncNKeep:getTimeFromNTP(){ //get time from ntp server

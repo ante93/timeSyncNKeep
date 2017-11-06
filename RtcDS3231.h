@@ -6,8 +6,8 @@
 #include <Arduino.h>
 
 #include "RtcDateTime.h"
-#include "RtcTemperature.h"
-#include "RtcUtility.h"
+//#include "RtcTemperature.h"
+//#include "RtcUtility.h"
 
 
 //I2C Slave Address  

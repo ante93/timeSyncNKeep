@@ -16,7 +16,7 @@
 #include "RtcDateTime.h"
 #include "RtcDS1307.h"
 
-class timeSyncNKeep(){
+class timeSyncNKeep{
 	public:
 		timeSyncNKeep(String server, float timeZone, int summerTime);
 		RtcDS3231<TwoWire> rtcObject(Wire);
@@ -34,4 +34,4 @@ class timeSyncNKeep(){
 		void setTimeOnRTC(RTCtime time);
 		RtcDateTime getTimeFromRTC();
 
-}
+};
